@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import fr.leopoldvlm.yana.MainActivity
+import fr.leopoldvlm.yana.R
 import fr.leopoldvlm.yana.YanaApplication
 import fr.leopoldvlm.yana.databinding.ActivityNoteListBinding
 import fr.leopoldvlm.yana.ui.auth.LoginActivity
@@ -32,6 +34,7 @@ class NoteListActivity: AppCompatActivity() {
         }
 
         setText()
+        setTopBarListeners()
     }
 
     private fun setText() {
@@ -50,20 +53,26 @@ class NoteListActivity: AppCompatActivity() {
             binding.text.text = text
             binding.progressBar.visibility = View.INVISIBLE
         }
+    }
 
-//        lifecycleScope.launch {
-//            val notes = (application as YanaApplication).getNotes()
-//            for (note in notes) {
-//                val localDate = note.createdAt.toDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()
-//                text.append("${note.title} (created on ${localDate.format(dateFormatter)}" +
-//                        " at ${localDate.format(hourFormatter)})\n")
-//            }
-//            for(i in 0..100) {
-//                text.append("much text! $i\n")
-//            }
-//            binding.text.text = text
-//            binding.progressBar.visibility = View.INVISIBLE
-//        }
+    private fun setTopBarListeners() {
+        binding.topAppBar.setOnMenuItemClickListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.action_signout -> logout()
+                else -> false
+            }
+        }
+    }
+
+    private fun logout(): Boolean {
+        if (auth.currentUser == null) {
+            return false
+        }
+        auth.signOut()
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+        return true
     }
 
 
