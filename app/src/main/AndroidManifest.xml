@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Yana"
         tools:targetApi="31">
         <activity
-            android:name=".auth.AuthActivity"
+            android:name=".ui.auth.AuthActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -25,9 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".auth.LoginActivity" />
-        <activity android:name=".auth.SigninActivity" />
-        <activity android:name=".NoteListActivity" />
+        <activity android:name=".ui.auth.LoginActivity" />
+        <activity android:name=".ui.auth.SigninActivity" />
+        <activity android:name=".ui.notes.NoteListActivity"
+            />
 
         <meta-data
             android:name="preloaded_fonts"

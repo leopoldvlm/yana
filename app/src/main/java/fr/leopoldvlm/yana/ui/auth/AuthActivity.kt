@@ -1,8 +1,7 @@
-package fr.leopoldvlm.yana.auth
+package fr.leopoldvlm.yana.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +28,6 @@ abstract class AuthActivity : AppCompatActivity() {
         val button = binding.auth
 
         button.setOnClickListener {
-            Log.i(tag, "Button clicked")
             val email = binding.email.text.toString()
             if (email == "") {
                 Toast.makeText(baseContext, "Enter an email", Toast.LENGTH_SHORT).show()
@@ -83,7 +81,6 @@ abstract class AuthActivity : AppCompatActivity() {
     protected abstract fun getAuthContext(): CharSequence
 
     private fun finishActivity(user: FirebaseUser?) {
-        Log.i(tag, user?.email.toString())
         if (user == null) {
             setResult(RESULT_CANCELED)
             finish()

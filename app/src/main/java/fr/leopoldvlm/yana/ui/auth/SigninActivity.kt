@@ -1,4 +1,4 @@
-package fr.leopoldvlm.yana.auth
+package fr.leopoldvlm.yana.ui.auth
 
 import android.os.Bundle
 import android.widget.Toast

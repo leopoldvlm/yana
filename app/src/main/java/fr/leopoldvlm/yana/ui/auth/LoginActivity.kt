@@ -1,7 +1,6 @@
-package fr.leopoldvlm.yana.auth
+package fr.leopoldvlm.yana.ui.auth
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import fr.leopoldvlm.yana.R
 
@@ -18,7 +17,6 @@ class LoginActivity : AuthActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    Log.i("bool", "salut!")
                     callback(true)
                 } else {
                     Toast.makeText(baseContext, "Auth failed", Toast.LENGTH_SHORT).show()
