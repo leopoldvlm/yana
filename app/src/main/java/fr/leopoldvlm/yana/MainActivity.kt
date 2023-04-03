@@ -6,8 +6,6 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
 import fr.leopoldvlm.yana.databinding.ActivityMainBinding
 import fr.leopoldvlm.yana.databinding.ActivityMainLoadingBinding
 import fr.leopoldvlm.yana.ui.auth.LoginActivity
@@ -22,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        auth = Firebase.auth
+        auth = (application as YanaApplication).auth
         setContentView(ActivityMainLoadingBinding.inflate(layoutInflater).root)
         handleAuth()
 
