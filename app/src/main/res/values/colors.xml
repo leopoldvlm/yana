@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    main palette-->
+    <color name="dark_grey">#2C3639</color>
+    <color name="light_grey">#3F4E4F</color>
+    <color name="light_brown">#A27B5C</color>
+    <color name="cream">#DCD7C9</color>
+
+<!--    secondary colours-->
+    <color name="dark_brown">#2D2424</color>
+    <color name="regular_brown">#5C3D2E</color>
+    <color name="orange">#B85C38</color>
+    <color name="beige">#E0C097</color>
 </resources>
