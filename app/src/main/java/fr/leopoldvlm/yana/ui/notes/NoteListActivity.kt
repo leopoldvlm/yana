@@ -3,6 +3,7 @@ package fr.leopoldvlm.yana.ui.notes
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import fr.leopoldvlm.yana.MainActivity
@@ -44,13 +45,12 @@ class NoteListActivity: AppCompatActivity() {
         (application as YanaApplication).notes.observe(this) { notes ->
             for (note in notes) {
                 val localDate = note.createdAt.toDate().toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime()
-                text.append("${note.title} (created on ${localDate.format(dateFormatter)}" +
-                        " at ${localDate.format(hourFormatter)})\n")
+                val ok = note.lastModified?.toDate()?.toInstant()?.atZone(ZoneId.systemDefault())?.toLocalDateTime()
+                val txt = "${note.title} (created on ${localDate.format(dateFormatter)}" +
+                        " mod at $ok\n"
+                text.append(txt)
+                Toast.makeText(this, txt, Toast.LENGTH_LONG).show()
             }
-            for(i in 0..100) {
-                text.append("much text! $i\n")
-            }
-            binding.text.text = text
             binding.progressBar.visibility = View.INVISIBLE
         }
     }
