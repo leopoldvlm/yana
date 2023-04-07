@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import fr.leopoldvlm.yana.databinding.ActivityMainBinding
 import fr.leopoldvlm.yana.databinding.ActivityMainLoadingBinding
+import fr.leopoldvlm.yana.model.YanaApplication
 import fr.leopoldvlm.yana.ui.auth.LoginActivity
 import fr.leopoldvlm.yana.ui.auth.SigninActivity
 import fr.leopoldvlm.yana.ui.notes.NoteListActivity

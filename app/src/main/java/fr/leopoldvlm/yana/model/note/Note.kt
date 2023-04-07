@@ -1,16 +1,7 @@
-package fr.leopoldvlm.yana.notes
+package fr.leopoldvlm.yana.model.note
 
 import com.google.firebase.Timestamp
 import java.util.*
-
-data class DocumentNotes(
-    val id: String,
-    val notes: List<Note>
-) {
-    // no argument constructor -> for Firebase deserialisation!
-    @Suppress("unused")
-    constructor(): this("", ArrayList<Note>())
-}
 
 data class Note(
     val content: String,
@@ -26,4 +17,3 @@ data class Note(
         null
     )
 }
-

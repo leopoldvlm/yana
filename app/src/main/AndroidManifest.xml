@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.Yana"
-        android:name=".YanaApplication"
+        android:name=".model.YanaApplication"
         tools:targetApi="31">
         <activity
             android:name=".ui.auth.AuthActivity"

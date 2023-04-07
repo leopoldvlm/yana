@@ -65,4 +65,6 @@
     <string name="logout">Log out</string>
     <string name="search">Search</string>
     <string name="create_note">Create note</string>
+    <string name="last_modified">Last modified: %s at %s</string>
+    <string name="note">Note</string>
 </resources>

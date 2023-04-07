@@ -16,9 +16,6 @@ import fr.leopoldvlm.yana.databinding.ActivityAuthBinding
 abstract class AuthActivity : AppCompatActivity() {
     protected lateinit var auth: FirebaseAuth
     protected lateinit var binding: ActivityAuthBinding
-    protected val tag = "FirebaseAuth"
-
-    // TODO : fix being able to return line in email/password fields
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
