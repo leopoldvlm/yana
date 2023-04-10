@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginVertical="10dp"
     android:layout_marginHorizontal="20dp"
+    android:clickable="true"
+    android:focusable="true"
     >
 
 
@@ -13,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/light_brown"
+        android:backgroundTint="@color/pastel_red"
+        app:cardCornerRadius="24dp"
         >
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -31,7 +34,7 @@
                 android:text="@string/note"
                 android:maxLines="1"
                 android:ellipsize="middle"
-                android:textColor="@color/cream"
+                android:textColor="@color/red"
                 />
 
             <com.google.android.material.divider.MaterialDivider
@@ -49,7 +52,7 @@
                 android:text="@string/lorem_ipsum"
                 android:maxLines="2"
                 android:ellipsize="end"
-                android:textColor="@color/cream"
+                android:textColor="@color/light_red"
                 />
 
             <TextView
@@ -60,6 +63,7 @@
                 android:maxLines="1"
                 android:text="@string/last_modified"
                 android:layout_marginTop="5dp"
+                android:textColor="@color/light_red"
                 />
 
 

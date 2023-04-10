@@ -11,12 +11,48 @@
 <!--    main palette-->
     <color name="dark_grey">#2C3639</color>
     <color name="light_grey">#3F4E4F</color>
-    <color name="light_brown">#A27B5C</color>
+    <color name="terracotta">#A27B5C</color>
     <color name="cream">#DCD7C9</color>
 
 <!--    secondary colours-->
     <color name="dark_brown">#2D2424</color>
     <color name="regular_brown">#5C3D2E</color>
-    <color name="orange">#B85C38</color>
+    <color name="pumpkin">#B85C38</color>
     <color name="beige">#E0C097</color>
+
+<!--    dark palette-->
+    <color name="dark_green">#103417</color>
+    <color name="dark_yellow">#452700</color>
+    <color name="dark_orange">#4d210d</color>
+    <color name="dark_red">#5d1012</color>
+    <color name="dark_pink">#551639</color>
+    <color name="dark_purple">#362160</color>
+    <color name="dark_blue">#102d5c</color>
+
+<!--    light palette-->
+    <color name="light_green">#6ac46d</color>
+    <color name="light_yellow">#daaa3f</color>
+    <color name="light_orange">#f69d50</color>
+    <color name="light_red">#ff938b</color>
+    <color name="light_pink">#e275ad</color>
+    <color name="light_purple">#b083f0</color>
+    <color name="light_blue">#529bf5</color>
+
+<!--    pastel palette - might do a shade darker as it's barely recognisable-->
+    <color name="pastel_green">#b4f1b4</color>
+    <color name="pastel_yellow">#fbe090</color>
+    <color name="pastel_orange">#ffdeb3</color>
+    <color name="pastel_red">#ffdad5</color>
+    <color name="pastel_pink">#ffd7eb</color>
+    <color name="pastel_purple">#edddff</color>
+    <color name="pastel_blue">#c6e6ff</color>
+
+<!--    regular palette-->
+    <color name="green">#46954a</color>
+    <color name="yellow">#eac55f</color>
+    <color name="orange">#cc6b2c</color>
+    <color name="red">#ef4641</color>
+    <color name="pink">#c96198</color>
+    <color name="purple">#8256d0</color>
+    <color name="blue">#316dca</color>
 </resources>

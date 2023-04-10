@@ -2,11 +2,11 @@
     <!-- Base application theme. -->
     <style name="Theme.Yana" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/light_brown</item>
+        <item name="colorPrimary">@color/terracotta</item>
         <item name="colorPrimaryVariant">@color/light_grey</item>
         <item name="colorOnPrimary">@color/cream</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondary">@color/pumpkin</item>
         <item name="colorSecondaryVariant">@color/regular_brown</item>
         <item name="colorOnSecondary">@color/beige</item>
         <!-- Status bar color. -->
