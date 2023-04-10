@@ -31,7 +31,7 @@ class NoteListViewHolder(private val binding: NoteListBinding) : RecyclerView.Vi
                     v.animate()
                         .scaleX(1f)
                         .scaleY(1f)
-                        .setDuration(300)
+                        .setDuration(50)
                         .setInterpolator(DecelerateInterpolator())
                         .withEndAction { v.performClick() }
                         .start()

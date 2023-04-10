@@ -29,7 +29,17 @@
     <color name="dark_purple">#362160</color>
     <color name="dark_blue">#102d5c</color>
 
-<!--    light palette-->
+<!--    strong palette-->
+    <color name="strong_green">#245829</color>
+    <color name="strong_yellow">#6c4400</color>
+    <color name="strong_orange">#7f3913</color>
+    <color name="strong_red">#922323</color>
+    <color name="strong_pink">#7e325a</color>
+    <color name="strong_purple">#5936a2</color>
+    <color name="strong_blue">#1b4a91</color>
+
+
+    <!--    light palette-->
     <color name="light_green">#6ac46d</color>
     <color name="light_yellow">#daaa3f</color>
     <color name="light_orange">#f69d50</color>
